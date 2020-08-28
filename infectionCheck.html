@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+
+	<head>
+		<link rel= "stylesheet" type= "text/css" href= "infectionCheck.css">
+		<meta charset="utf-8"> <!-- how convert characters to machine code-->
+		<meta name="description" content="This is a website page that entertains Floridians admist COVID-19">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="corona, florida, covid, insight, infected, quiz">
+		<meta name="author" content="Nikita Dua">
+	</head>
+	<body>
+		<header>
+			<nav class="menu">
+				<div class="backgroundMenu">
+					<div class="table">
+						<ul class="tabWrapper">
+							<li class="tab">
+								<button class="tabLinks" ><a href="infectionCheck.html">Infection Check</a></button>
+							</li>
+							<li class="tab">
+								<button class="tabLinks" ><a href="virtualPlayroom.html">Virtual Playroom</a></button>
+							</li>
+							<li class="tab">
+								<button class="tabLinks"><a href="resources.html">Resources</a></button>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<a href="home.html">
+				<img class="mainLogo" src="images/Coronacation1.png" alt="Logo">
+				</a>
+
+			</nav>
+		</header>
+
+		<form METHOD=POST>
+
+			<b>What part of Florida do you live in?<br></b>
+			<input TYPE="radio" NAME="a" VALUE="5">Panhandle<br>
+			<input TYPE="radio" NAME="a" VALUE="20">North<br>
+			<input TYPE="radio" NAME="a" VALUE="15">Central<br>
+			<input TYPE="radio" NAME="a" VALUE="10">South<br><br>
+
+			<b>How many people(including family members) have you interacted with since March?<br></b>
+			<input TYPE="radio" NAME="b" VALUE="20">0<br>
+			<input TYPE="radio" NAME="b" VALUE="15">0-10<br>
+			<input TYPE="radio" NAME="b" VALUE="10">10-20<br>
+			<input TYPE="radio" NAME="b" VALUE="5">20+<br><br>
+
+			<b>How often do you excercise?<br></b>
+			<input TYPE="radio" NAME="c" VALUE="20">5-6 times per week<br>
+			<input TYPE="radio" NAME="c" VALUE="15">3-4 times per week<br>
+			<input TYPE="radio" NAME="c" VALUE="10">1-2 times per week<br>
+			<input TYPE="radio" NAME="c" VALUE="5">No regular excercise<br><br>
+
+			<b>What is your age?<br></b>
+			<input TYPE="radio" NAME="d" VALUE="10">0-10<br>
+			<input TYPE="radio" NAME="d" VALUE="20">11-30<br>
+			<input TYPE="radio" NAME="d" VALUE="15">31-60<br>
+			<input TYPE="radio" NAME="d" VALUE="5">61+<br><br>
+
+			<b>Does your family have a history of heart disease?<br></b>
+			<input TYPE="radio" NAME="e" VALUE="19">No one in family has a known history of heart disease<br>
+			<input TYPE="radio" NAME="e" VALUE="14">I have one or more relatives over 60 with heart disease<br>
+			<input TYPE="radio" NAME="e" VALUE="9">I have one or two relatives under 60 with heart disease<br>
+			<input TYPE="radio" NAME="e" VALUE="4">I have 3 or more relatives under 60 with heart disease<br><br>
+
+			<input TYPE="button" VALUE="Compute Score!" onClick=computeForm(this.form)><br><br>
+		</form>
+		
+	</body>
+	<script LANGUAGE="JavaScript">
+
+			function test_it(entry) {
+				if (entry.value!=null && entry.value.length!=0)
+				{
+					entry.value=""+ eval(entry.value);
+				}
+
+				computeForm(entry.form);
+			}
+
+			function computeForm(form) 
+			{
+
+				var total=0;
+
+			
+
+			for (var count=0; count<4; count++)  
+			{
+				if (form.a[count].checked)
+				{
+					var total=total+parseInt(form.a[count].value);
+				}
+
+				if (form.b[count].checked)
+				{
+					var total=total+parseInt(form.b[count].value);
+				}
+
+				if (form.c[count].checked)
+				{
+					var total=total+parseInt(form.c[count].value);
+				}
+
+				if (form.d[count].checked)
+				{
+					var total=total+parseInt(form.d[count].value);
+				}
+
+				if (form.e[count].checked)
+				{
+					 var total=total+parseInt(form.e[count].value);
+				}
+
+			}
+
+
+
+			if (total<25){alert("Yikes, you should probably consider taking some precautions found in the resources page. Your score is a " + total.toString() + " out of 100.") }
+
+			else if (total<60){ alert("Oh no, your score is a " + total.toString() + " out of 100. Please consider looking at the resources page found on the top-left corner. ")}
+
+			else if (total<50){alert( "Keep doing what you are doing, your score is a " + total.toString() + " out of 100. But, if you want to learn more, look at the resources page found on the top-left corner." )}
+
+			else if (total<100){ alert("Congratulations!. Your score is a " + total.toString() + " out of 100. You are at an extremely low risk for catching COVID-19. Keep it up and stay safe! If you want acess to more information, please consider looking at the resources page found on the top-left corner.")}
+
+			else { window.location="http://www.yoursite.com/answer5.shtml" }
+				
+
+		}
+
+				
+
+				
+	//-->
+	</SCRIPT>
+</html>

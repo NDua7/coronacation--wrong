@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="resources.css">
+		<meta charset="utf-8"> <!-- how convert characters to machine code-->
+		<meta name="description" content="This is a website that educates and entertains users with unique insight on the Corona Virus in Florida">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="corona, florida, covid, insight, infected, quiz">
+		<meta name="author" content="Nikita Dua">
+
+		<title>Coronacation</title>
+	</head>
+
+	<body>
+		<div id="Home">
+			<header>
+				<nav class="menu">
+					<div class="backgroundMenu">
+						<div class="table">
+
+							<ul class="tabWrapper">
+								<li class="tab">
+									<button class="tabLinks" ><a href="infectionCheck.html">Infection Check</a></button>
+								</li>
+
+								<li class="tab">
+									<button class="tabLinks" ><a href="virtualPlayroom.html">Virtual Playroom</a></button>
+								</li>
+
+								<li class="tab">
+									<button class="tabLinks"><a href="resources.html">Resources</a></button>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+
+					<a href="home.html">
+					<img class="mainLogo" src="images/Coronacation1.png" alt="Logo">
+					</a>
+
+				</nav>
+			</header>
+		</div>
+
+		<h2>
+			Do you want to learn more about COVID-19 in Florida? Click on a topic to find out more:
+		</h2>
+
+		<div class="tab">
+  			<button id="gameButton" value="A" onclick="refresh(event)">News</button>
+
+
+  			<button id= "connectButton" value="B" onclick="refresh(event)" >Reopenings</button>
+  			<button id= "careButton" value="C" onclick="refresh(event)">Saftey Tips</button>
+		</div>
+
+		
+
+
+		<div id="news" >
+			<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429">
+				      <img src="images/dashboard.jpg" alt="fl dashboard" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>The Florida Dashboard -</strong> provides updated statistics on the virus on a daily basis</div>
+				  </div>
+				</div>
+					
+
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="https://www.sun-sentinel.com/news/florida/">
+				      <img src="images/sun.png" alt="sun-sentinel" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>The Sun Sentinel-</strong> the main daily newspaper in South Florida, with new headlines on the Corona Virus frequently</div>
+				  </div>
+				</div>
+					
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="https://news.google.com/covid19/map?hl=en-US&mid=%2Fm%2F02xry&gl=US&ceid=US%3Aen">
+				      <img src="images/googleNews.jpg" alt="solitaire" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>Google News-</strong> updated, visual information about the Corona Virus with community-based statistics</div>
+				  </div>
+				</div>
+					
+				<!-- little alchemy-->
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="https://www.broward.org/CoronaVirus/Pages/default.aspx">
+				      <img src="images/broward.jpg" alt="little alchemy" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>Broward County News- </strong> updates on the most populated county in FL</div>
+				  </div>
+				</div>
+		</div>
+
+		<div id="reopen">
+			<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="http://www.fldoe.org/em-response/">
+				      <img src="images/education.jpg" alt="fl dashboard" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>The Florida Department of Education -</strong> provides a listing of reopening plans for public colleges and k-12 schools</div>
+				  </div>
+				</div>
+					
+
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="https://disneyworld.disney.go.com/experience-updates/">
+				      <img src="images/disney.jpg" alt="sun-sentinel" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>Disney World Covid-19 Plan-</strong> introduces the new dates and guidelines for the happiest place in the world</div>
+				  </div>
+				</div>
+					
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="https://www.clickorlando.com/news/local/2020/08/14/what-to-expect-as-florida-movie-theaters-slowly-reopen/">
+				      <img src="images/regal.png" alt="solitaire" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>Movie Theaters-</strong> a news article dedicated to breaking down the theater openings in FL</div>
+				  </div>
+				</div>
+					
+				<!-- little alchemy-->
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="http://www.floridahealth.gov/environmental-health/food-safety-and-sanitation/index.html">
+				      <img src="images/denny.jpg" alt="little alchemy" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>Florida Department of Health- </strong> a guide to proper restaurant ettiquite admist COVID</div>
+				  </div>
+				</div>
+		</div>
+
+
+		<div id="tip">
+			<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="http://www.fldoe.org/em-response/">
+				      <img src="images/education.jpg" alt="fl dashboard" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>The Florida Department of Education -</strong> provides a listing of reopening plans for public colleges and k-12 schools</div>
+				  </div>
+				</div>
+					
+
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="https://disneyworld.disney.go.com/experience-updates/">
+				      <img src="images/disney.jpg" alt="sun-sentinel" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>Disney World Covid-19 Plan-</strong> introduces the new dates and guidelines for the happiest place in the world</div>
+				  </div>
+				</div>
+					
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="https://www.clickorlando.com/news/local/2020/08/14/what-to-expect-as-florida-movie-theaters-slowly-reopen/">
+				      <img src="images/regal.png" alt="solitaire" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>Movie Theaters-</strong> a news article dedicated to breaking down the theater openings in FL</div>
+				  </div>
+				</div>
+					
+				<!-- little alchemy-->
+				<div class="responsive">
+				  <div class="gallery">
+				    <a target="_blank" href="http://www.floridahealth.gov/environmental-health/food-safety-and-sanitation/index.html">
+				      <img src="images/denny.jpg" alt="little alchemy" width="600" height="400">
+				    </a>
+				    <div class="desc"><strong>Florida Department of Health- </strong> a guide to proper restaurant ettiquite admist COVID</div>
+				  </div>
+				</div>
+		</div>
+
+		<script>
+			function refresh(event)
+			{
+				var news = document.getElementById('news');
+   				var reopen = document.getElementById('reopen');
+   				var tip= document.getElementById('tip');
+				 switch(event.target.value)
+				 {
+	       			case 'A':
+	       			{
+	       				news.style.display = "";
+         				reopen.style.display ="none";
+         				tip.style.display="none";
+	         			
+	         			 break;
+	        		}
+	        		case 'B':
+	        		{
+	        			news.style.display = "none";
+         				reopen.style.display ="";
+         				tip.style.display="none";
+	         			
+	         			 break;
+	        		}
+	        		case 'C':
+	        		{
+	        			news.style.display = "none";
+         				reopen.style.display ="none";
+         				tip.style.display="";
+
+	         			 break;
+	        		}
+	     		 }
+
+			}
+		</script>
+	
+</html>

@@ -1,0 +1,87 @@
+body
+{
+	background-color: bisque;
+}
+
+
+.mainLogo
+{
+  	border-radius: 4px; 
+	padding: 20px;
+	width: 80px;
+
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index: 2;
+}
+
+.backgroundMenu
+{
+	height: 100px;
+	width: 1090px;
+	/*background: url(images/sand.jpg);*/
+	z-index: 1;
+
+}
+
+.table
+{
+	display: table;
+	margin: 0 auto;
+
+}
+
+
+.menu
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tabWrapper
+{
+	overflow: auto; /*content for specific area length*/
+	border: 2px none #ccc;
+	/*background-color:*/
+}
+
+.tab
+{
+	display:inline;
+}
+
+.tabWrapper button
+{
+	background-color: inherit;
+	font-family: Impact, Charcoal, sans-serif;
+	font-weight:750;
+	font-size: 30px;
+
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 20px 80px;
+	transition: 0.3s;
+
+}
+
+
+.tabWrapper button:hover
+{
+	background-color: #ddd;
+}
+
+.tabWrapper button.active
+{
+	background-color: #ccc;
+}
+
+table
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}

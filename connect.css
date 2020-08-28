@@ -1,0 +1,171 @@
+body
+{
+	background-color: bisque;
+}
+
+
+.mainLogo
+{
+  	border-radius: 4px; 
+	padding: 20px;
+	width: 80px;
+
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index: 2;
+}
+
+.backgroundMenu
+{
+	height: 100px;
+	width: 1090px;
+	/*background: url(images/sand.jpg);*/
+	z-index: 1;
+
+}
+
+.table
+{
+	display: table;
+	margin: 0 auto;
+
+}
+
+
+.menu
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tabWrapper
+{
+	overflow: auto; /*content for specific area length*/
+	border: 2px none #ccc;
+	/*background-color:*/
+}
+
+.tab
+{
+	display:inline;
+}
+
+.tabWrapper button
+{
+	background-color: inherit;
+	font-family: Impact, Charcoal, sans-serif;
+	font-weight:750;
+	font-size: 30px;
+
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 20px 80px;
+	transition: 0.3s;
+
+}
+
+
+.tabWrapper button:hover
+{
+	background-color: #ddd;
+}
+
+.tabWrapper button.active
+{
+	background-color: #ccc;
+}
+
+table
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.room
+{
+	border-radius: 8px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.launchButton {
+
+  background: #4abdac;
+  background-image: -webkit-linear-gradient(top, #4abdac, 4abdac);
+  background-image: -moz-linear-gradient(top, #4abdac, 4abdac);
+  background-image: -ms-linear-gradient(top, #4abdac, 4abdac);
+  background-image: -o-linear-gradient(top, #4abdac, 4abdac);
+  background-image: linear-gradient(to bottom, #4abdac, 4abdac);
+  -webkit-border-radius: 33;
+  -moz-border-radius: 33;
+  border-radius: 33px;
+  font-family: Impact, Charcoal, sans-serif;
+ font: 30px;
+  color: #000;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width:100%;
+  text-align: left;
+
+
+
+.launchButton :hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+.launchButton:active {
+	position:relative;
+	top:1px;
+}
